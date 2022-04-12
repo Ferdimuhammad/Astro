@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'ASTRO-MINI tidak aktif' : banned ? 'kamu dibanned' : 'ya?',
-                '©ASTRO-MINI   ?',
+                isBanned ? 'WarD-BOT tidak aktif' : banned ? 'kamu dibanned' : 'ya?',
+                '©WarD-BOT  ?',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -32,16 +32,16 @@ handler.all = async function (m, { isBlocked }) {
 = 1 minggu: 5000
 = 3 minggu: 10.000
 = 1 bulan: 20.000
-= permanen: 30.000 atau 50.000
+= permanen: NO
 
 DONASI GAYS BIAR BOT ON 24 JAM
---> PULSA: +6283163686691
---> AXIS: +6283163686691
+--> PULSA: +6289687890508
+--> INDOSAT: +6285722539582
 
 KALO MINAT HUBUNGIN SAYA
---> wa.me/+6283163686691
+--> wa.me/+6289687890508
 
-makasih buat donasi`.trim(), '©ASTRO-MINI', 'Digi', '#viadigi', 'Umobile', '#viaumobile', m)
+makasih buat donasi`.trim(), '©WarD-BOT', 'Digi', '#viadigi', 'Umobile', '#viaumobile', m)
 }
 
     // salam
@@ -71,7 +71,7 @@ makasih buat donasi`.trim(), '©ASTRO-MINI', 'Digi', '#viadigi', 'Umobile', '#vi
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Aktif selama ${uptime} ⏲️| Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} 👾|Botz by ASTRO-MINI`).catch(_ => _)
+        await this.setStatus(`Aktif selama ${uptime} ⏲️| Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} 👾|Botz by WarD-BOT`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
